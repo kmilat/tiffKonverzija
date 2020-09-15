@@ -1,0 +1,118 @@
+
+
+
+:root {
+   --font: 'Segoe UI';
+   --SelectedBorder:#2eac2e;
+   --SelectedBackground: honeydew; 
+   --BorderColor: #f1f1f1; 
+   --ItemBackgroundColor: white;
+   --ThemeColor: #7b95a3;
+   --ThemeBorder: #ff7400;
+   --TextColor: ghostwhite; 
+   --PreviewBackground: #999999; 
+}
+
+body {
+   cursor: context-menu;
+   font-family: var(--font);
+   background-color: #f1f1f1;
+   font-size: 14px;
+}
+
+
+// za footer kod testne baze
+.defaultTextColor{
+   color:var(--TextColor)!important
+}
+.overflowText{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.fullWidthHeight{
+   widows: 100%;
+   height:100%
+}
+.borderRight{
+   border-right: 1px solid var(--BorderColor);
+}
+.borderBottom{
+   border-bottom: 1px solid var(--BorderColor);
+}
+.borderLeft{
+   border-left: 1px solid var(--BorderColor);
+}
+.borderTop{
+   border-top: 1px solid var(--BorderColor);
+}
+.borderFULL{
+   border: 1px solid var(--BorderColor);
+}
+.noselect {
+   -webkit-touch-callout: none; /* iOS Safari */
+     -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+         -ms-user-select: none; /* Internet Explorer/Edge */
+             user-select: none; /* Non-prefixed version, currently
+                                   supported by Chrome and Opera */
+}
+
+
+// FILE PREVIEW
+.fileViewer{
+   width: 100%;
+   height:100%;
+   float:left;
+   position: relative;
+}    
+.fileViewerChild{
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   position: absolute;
+} 
+.fileViewerContentInner{
+   top:35px;
+   left:0;
+   right:0;
+   bottom:0;
+   position: absolute;
+   overflow: auto;
+   background:var(--PreviewBackground);
+   padding: 1px;
+}
+.fileViewerNaslov{
+   top:0;
+   left:0;
+   right:0;
+   position: absolute;
+   height:35px;
+   padding: 5px 0;
+}
+
+
+
+
+
+.sliderContainer{
+   height: 0px;
+   padding: 12px;
+   border-radius: 3px;
+}
+
+
+.main-content {
+   height: 100vh;
+   overflow-y: auto;
+   padding: 3em;
+}
+
+
+.backgroundImg{
+   background-image: url(assets\images\background.jpg);
+   box-shadow: 0 0 5px 0px rgba(0,0,0,0.7);
+   background-repeat: no-repeat;
+}

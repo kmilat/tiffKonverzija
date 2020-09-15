@@ -1,0 +1,10 @@
+<div *ngIf="srcSanitizer && loaded" style="height:100%; padding:20px">
+
+    <img *ngIf="datoteka.mimetype !=='image/tiff'" id="img_here" type="type" [src]="srcSanitizer"
+        style="display:block;margin:auto;max-width:97%; max-height:200px; height:auto; width:auto;">
+
+
+    <button *ngIf="!data.saKlijenta" pButton pRipple type="button" label="Download" class="p-button-raised p-button-text" 
+    style="display: block;margin-left: auto;margin-right: auto;width: 70%;" (click)="download()"></button>
+
+</div>
